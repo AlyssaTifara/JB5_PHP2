@@ -13,6 +13,19 @@
             padding: 8px;
             text-align: left;
         }
+        table {
+            border: 1px solid #0099cc;
+        }
+        th {
+            background-color: #0099cc;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ccccff;
+        }
     </style>
 </head>
 <body>
@@ -23,7 +36,7 @@
         'jenis_kelamin' => 'Perempuan' ];
     
     echo "<table>";
-    echo "<tr><th>Field</th><th>Value</th></tr>";
+    echo "<tr><th>Biodata</th><th>Isi</th></tr>";
     echo "<tr><td>Nama</td><td>{$Dosen['nama']}</td></tr>";
     echo "<tr><td>Domisili</td><td>{$Dosen['domisili']}</td></tr>";
     echo "<tr><td>Jenis Kelamin</td><td>{$Dosen['jenis_kelamin']}</td></tr>";
