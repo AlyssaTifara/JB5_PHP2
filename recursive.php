@@ -1,7 +1,10 @@
 <?php
-function tampikanHaloDunia() {
-    echo "Halo dunia! <br>";
-    tampikanHaloDunia();
+function tampilkanAngka(int $jumlah, int $indeks = 1){
+    echo "Perulangan ke-{$indeks} <br>";
+    
+    for ($i=1; $i<=25 ; $i++) {
+        echo "Perulangan ke-{$i} <br>";
+    }
 }
-tampikanHaloDunia();
+tampilkanAngka(20);
 ?>
